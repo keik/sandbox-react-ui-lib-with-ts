@@ -8,9 +8,13 @@
     "styled-components": "^5.0.1"
   },
   "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.9.0",
+    "@babel/preset-react": "^7.9.4",
     "@types/react": "^16.9.27",
     "@types/react-dom": "^16.9.5",
     "@types/styled-components": "^5.0.1",
+    "babel-plugin-styled-components": "^1.10.7",
     "npm-run-all": "^4.1.5",
     "prettier": "^2.0.2",
     "rimraf": "^3.0.2",
@@ -22,9 +26,9 @@
   "repository": "https://github.com/keik/sandbox-react-ui-lib-with-ts",
   "scripts": {
     "build": "run-p build:*",
-    "build:cjs": "tsc -p tsconfig.cjs.json",
-    "build:delc": "tsc -p tsconfig.delc.json",
-    "build:esm": "tsc -p tsconfig.esm.json",
+    "build:cjs": "tsc -p tsconfig.cjs.json --outDir lib/cjs && babel lib/cjs -d lib/cjs",
+    "build:decl": "tsc -p tsconfig.delc.json --outDir lib/types",
+    "build:esm": "tsc -p tsconfig.esm.json --outDir lib/esm && babel lib/esm -d lib/esm",
     "clean": "rimraf lib"
   },
   "types": "./lib/types/index.d.ts"

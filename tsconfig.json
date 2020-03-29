@@ -2,7 +2,7 @@
   "compilerOptions": {
     "target": "es5",
     "lib": ["es2018", "dom"],
-    "jsx": "react",
+    "jsx": "preserve",
     "strict": true,
     "moduleResolution": "node",
     "esModuleInterop": true,
