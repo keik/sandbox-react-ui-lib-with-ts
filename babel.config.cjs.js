@@ -1,14 +1,4 @@
 module.exports = {
-  presets: [
-    [
-      "@babel/preset-env",
-      {
-        targets: {
-          browsers: ["ie >= 10"],
-        },
-      },
-    ],
-    "@babel/preset-react",
-  ],
+  presets: ["@babel/preset-env", "@babel/preset-react"],
   plugins: ["babel-plugin-styled-components"],
 };
