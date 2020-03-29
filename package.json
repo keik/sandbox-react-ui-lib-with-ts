@@ -17,7 +17,8 @@
     "typescript": "^3.8.3"
   },
   "license": "MIT",
-  "main": "index.js",
+  "main": "./lib/cjs/index.js",
+  "module": "./lib/esm/index.js",
   "repository": "https://github.com/keik/sandbox-react-ui-lib-with-ts",
   "scripts": {
     "build": "run-p build:*",
@@ -25,5 +26,6 @@
     "build:delc": "tsc -p tsconfig.delc.json",
     "build:esm": "tsc -p tsconfig.esm.json",
     "clean": "rimraf lib"
-  }
+  },
+  "types": "./lib/types/index.d.ts"
 }
