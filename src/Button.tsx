@@ -2,7 +2,7 @@ import * as React from "react";
 import * as _ from "styled-components/cssprop";
 
 type Props = {
-  primary: boolean;
+  primary?: true;
 };
 export const Button: React.FC<Props> = ({ children, primary }) => (
   <button
