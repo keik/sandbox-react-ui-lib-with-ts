@@ -29,9 +29,9 @@
   "repository": "https://github.com/keik/sandbox-react-ui-lib-with-ts",
   "scripts": {
     "build": "run-p build:*",
-    "build:cjs": "tsc -p tsconfig.cjs.json --outDir lib/cjs && babel lib/cjs --config-file ./babel.config.cjs.js -d lib/cjs && rimraf 'lib/cjs/*.jsx'",
-    "build:decl": "tsc -p tsconfig.delc.json --outDir lib/types",
-    "build:esm": "tsc -p tsconfig.esm.json --outDir lib/esm && babel lib/esm --config-file ./babel.config.esm.js -d lib/esm && rimraf 'lib/esm/*.jsx'",
+    "build:cjs": "tsc --outDir lib/cjs && babel lib/cjs --config-file ./babel.config.cjs.js -d lib/cjs && rimraf 'lib/cjs/*.jsx'",
+    "build:decl": "tsc -p tsconfig.decl.json --outDir lib/types",
+    "build:esm": "tsc --outDir lib/esm && babel lib/esm --config-file ./babel.config.esm.js -d lib/esm && rimraf 'lib/esm/*.jsx'",
     "clean": "rimraf lib"
   },
   "sideEffects": false,
