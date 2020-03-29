@@ -1,0 +1,19 @@
+{
+  "name": "sandbox-react-ui-lib-with-ts",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/keik/sandbox-react-ui-lib-with-ts",
+  "author": "keik <keik@c-fo.com>",
+  "license": "MIT",
+  "dependencies": {
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "styled-components": "^5.0.1"
+  },
+  "devDependencies": {
+    "@types/react": "^16.9.27",
+    "@types/react-dom": "^16.9.5",
+    "@types/styled-components": "^5.0.1",
+    "typescript": "^3.8.3"
+  }
+}
